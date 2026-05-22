@@ -1,0 +1,13 @@
+*{
+    background-color: red;
+}
+
+h1{
+    color:blue;
+}
+
+.paragraph{
+     color:white;
+     font-size:30px;
+     font-weight:lighter;
+}
