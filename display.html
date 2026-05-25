@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display </title>
+    <style>
+        .inline{       /*span*/
+            background-color: black;        
+            height: 50px;
+            display: inline;
+            color:white;
+        }
+
+        .block{       /*div*/
+            background-color: black;    
+            height: 50px;
+             color:white;
+             display:block;
+        }
+
+        .inline-block{
+             background-color: black;         
+             height: 50px;
+             color:white;
+             display: inline-block;
+        }
+       
+        .none{
+             background-color: black;         
+             height: 50px;
+             color:white;
+             display: none;
+        }
+
+        .flex{       
+             color:white;
+             display: flex;
+             border: 2px black solid;
+             margin: 5px;
+             flex-direction: column-reverse;
+        }
+        .square{
+             width:40px;
+             height:40px;
+             background-color: red;
+             margin:10px;
+             border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+     <div class="inline">Inline</div>
+     <span class="block">Block</span>
+     <div class="none">Inline Block</div> 
+
+     <div class="flex">
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+        <div class="square">4</div>
+        <div class="square">5</div>
+     </div>
+
+</body>
+</html>
