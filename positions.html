@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .static{
+            width:100px;
+            height:100px;
+            background-color:gray;
+            position:static;
+        }
+
+        .relative{
+            width:100px;
+            height:100px;
+            background-color:red;
+            position:relative;
+            bottom:150px;
+            left:0;
+        }
+
+        .absolute{
+            width:100px;
+            height:100px;
+            background-color:blue;
+            position:absolute;
+            left:20px;
+            top:10px;
+        }
+
+        .fixed{
+            width:100px;
+            height:100px;
+            background-color:orange;
+            position:fixed;
+            top:200px;
+        }
+
+        .sticky{
+            width:100px;
+            height:100px;
+            background-color:Pink;
+            position:sticky;
+            top:0;
+            left:0;
+          
+        }
+
+        .relative-parent{
+            width:300px;
+            height:3100px;
+            background-color:lightgray;
+            position:relative;
+        }
+        .absolute-child{
+            width:100px;
+            height:100px;
+            background-color:green;
+            position:absolute;
+            left:100px;
+            top:50px;
+        }
+        .sticky-child{
+            width:100px;
+            height: 100px;
+            position: sticky;
+            background-color: black;
+            top:150px;
+            color:white;
+        }
+
+        .relative-parent:hover{
+             background-color: chartreuse;
+        }
+
+        .sticky-child:active{
+            background-color: white;
+            color:black;
+        }
+
+        .sticky-child input{
+              border: 2px solid black;
+              color:red;
+        }
+
+        .sticky-child input:focus{
+              color:blue;
+              border : 0px solid blue;
+              
+        }
+        
+
+
+        /* Active, hover */
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Static Position</li>
+        <li>Relative Position</li>
+        <li>Absolute Position</li>
+        <li>Fixed Position</li>
+        <li>Sticky Position</li>
+    </ol>
+ <div class="relative-parent">
+         <div class="absolute-child"></div>
+    </div>
+    <div class="static"></div>
+    <div class="relative"></div> 
+    <div class="relative"></div> 
+    <div class="relative"></div> 
+    <div class="relative"></div> 
+    <div class="relative"></div> 
+    <div class="absolute"></div>
+    <div class="fixed"></div>
+    <div class="sticky"></div>
+
+
+    <div class="relative-parent">
+
+         <button class="sticky-child"> <input type="text"  /> Click me , will see a magic</button>
+
+
+    </div>
+
+   bu
+
+   
+
+    </div>
+</body>
+</html>
