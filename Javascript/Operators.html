@@ -8,11 +8,11 @@
 <body>
 
     <script>
-        // Arithmetic Operators
-        // Comparison Operators
+        // Arithmetic Operators - Done
+        // Comparison Operators - Done
         // Logical Operators
-        // Assignment Operatos
-        // Ternary Operators
+        // Assignment Operatos -Done
+        // Ternary Operators (Conditional Operator)
 
         // Arithmetic Operators 
         //  Plus , Minus, Multiplication, Division, Increment, Decrement 
@@ -73,6 +73,76 @@
 
         // Logical Operators
         // AND, OR, NOT
+        // Output  : Ture or False
+
+        // && , || , !
+
+        // And :
+        // true && true = true
+        // true && false = false
+        // false && false = false
+        // false && true = false
+        let f=20, g=30, h=20, i=50;
+
+        const outputandlogicalop = (f < g)  && (i > h)  ;
+                                //   true   &&  true
+
+        console.log("outputandlogicalop",outputandlogicalop);
+
+        const logturefalse = (f<g) && (h>i);
+                        //    true && false
+
+      console.log("logturefalse",logturefalse);
+
+
+       // OR :
+        // true || true = true
+        // true || false = true
+        // false || false = false
+        // false || true = true
+
+         const outputORlogicalop = (f < g)  ||  (i > h)  ;
+                                //  true || true 
+        const TrueOrFalse = (g >f) || (g==f);
+                        //  true || false 
+
+        const falseORfalse = (g <= f) || (i === h);
+                        //   false || false
+
+        console.log("outputORlogicalop",outputORlogicalop);
+        console.log("TrueOrFalse",TrueOrFalse);
+        console.log("falseORfalse",falseORfalse);
+
+        // not
+        const NOTOutput = !(g === h)
+
+        const NotFalseOutput = !(f === h)
+
+        console.log("NOTOutput",NOTOutput);
+        console.log("NotFalseOutput",NotFalseOutput);
+
+
+        // Ternary Operator 
+        //  ?:
+
+        const ternaryOp = f != h  ? 40 : 50 ;
+
+        console.log("ternaryOp",ternaryOp);
+
+
+        function func1(){
+             return "Jeeva";
+        }
+
+        function func2(){
+            return 90+10;
+        } 
+
+        const resultFunc = false ? func1() : func2();
+
+        console.log("resultFunc",resultFunc);
+
+
 
 
 
