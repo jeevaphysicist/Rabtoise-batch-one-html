@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+     <script>
+        //  indexof , includes, sort, filter, map, foreach
+        let arr = [1,2,3,4,5,6,7,8,9,10];
+
+        console.log("Index of 10 is",arr.indexOf(8));
+
+        // includes
+        console.log("Includes 10",arr.includes(12));
+
+        // filter
+        let filterArr = arr.filter((value)=>{
+            // Get only even numbers
+             return ( value >=5 && value <= 8)  
+        })
+
+        console.log("Filter Array",filterArr);
+
+        let mixedarr = [2,4,1,3,5,6,7,8,10,9];
+         console.log("Mixed Array",mixedarr);
+
+        // Sort
+        let sortArr =  mixedarr.sort((a,b)=> {return(b-a)});
+         console.log("Sorted Array",sortArr);
+        // 0.5
+
+        // Map
+        const employee=[
+            {id:1,name:"John",age:25},
+            {id:2,name:"Jane",age:30},
+            {id:3,name:"Bob",age:35},
+            {id:4,name:"Alice",age:40}
+        ];
+        let employeedetails = employee.map((value)=>{
+            return {
+                employeeName:value.name,
+                id:value.id
+            }
+        })
+        console.log("Employee Details",employeedetails);
+
+
+       employee.forEach((value)=>{
+            console.log("Employee Name", value.name);
+        })
+
+     </script>
+</body>
+</html>
