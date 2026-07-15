@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    <script>
+        //  local storage , session storage , cookies
+        //  Local Storage , 10 mb size , accessible only in the browser, data will be stored even after closing the browser
+         localStorage.setItem("name","jeevanantham");
+         localStorage.setItem("age",25);
+         console.log("Name is",localStorage.getItem("name"));
+         console.log("Age is",localStorage.getItem("age"));
+         localStorage.removeItem("name");
+
+
+        //  Session Storage , 5 mb size , accessible only in the browser, data will be stored only for the session
+        sessionStorage.setItem("name","jeevanantham");
+        sessionStorage.setItem("age",25);
+
+        // Cookies , 4 kb size , accessible in the browser and server, data will be stored even after closing the browser
+        // document.cookie = "name=jeevanantham; expires=Fri, 15 July  2026 19:59:59 GMT;";
+        // document.cookie = "age=25; expires=Fri, 15 July  2026 23:59:59 GMT;";
+    </script>
+    
+</body>
+</html>
