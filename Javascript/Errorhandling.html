@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handing</title>
+</head>
+<body>
+     <script>
+        //  execute initally the try block code .
+        // Execute the Catch block code if any error occurs in the try block.
+          try{
+            const a = 10;
+            const b=5;
+         
+            const c = a+b;
+            console.log("Sum is ",c);
+               
+          }
+          catch(error){
+            console.log("Error occurred: ",error);
+          }
+          finally{
+            console.log("Finally block executed");
+          }
+
+        //   Promise error handling
+        const promise = new Promise((resolve,reject)=>{
+             if(false){
+                resolve("Promise resolved successfully");
+             }
+             else{
+                reject("Promise rejected due to some error");
+             }
+        })
+        console.log("Promise is ",promise);
+        promise.then((result)=>{
+            console.log("Promise result is ",result);
+        }).catch((error)=>{
+            console.log("Promise error is ",error);
+        })
+
+
+        // Work :
+        // 1. work1 (milk)  
+        // 2. work2 (egg)
+        // 3. work3 (chesse) (outer kingdom)
+        // 4. Work4 (Cake)
+
+    //   fetch('https://jsonplaceholder.typicode.com/todos/1')
+    //   .then(response => response.json())
+    //   .then(json => console.log(json))
+
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(reponse=>response.json())
+      .then(data=>console.log(data))
+      .catch(error=>console.log("Error is ",error));
+
+// Async/Await error handling
+// async function fetchData(){
+//    try{
+//         const reponse = await 
+//         console.log("Response is ",response)
+//    }
+//    catch(error){
+//     console.log("Error is ",error);
+//    }
+// }
+
+// fetchData();
+
+// console.log("End of the code");
+
+   
+
+     </script>
+</body>
+</html>

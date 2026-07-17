@@ -21,9 +21,17 @@
         sessionStorage.setItem("age",25);
 
         // Cookies , 4 kb size , accessible in the browser and server, data will be stored even after closing the browser
-        // document.cookie = "name=jeevanantham; expires=Fri, 15 July  2026 19:59:59 GMT;";
-        // document.cookie = "age=25; expires=Fri, 15 July  2026 23:59:59 GMT;";
-    </script>
+        document.cookie = "name=jeevanantham; expires=Fri, 19 July  2026 19:59:59 GMT;";
+        document.cookie = "age=25; expires=Fri, 19 July  2026 23:59:59 GMT;";
+        // Remove Cookie
+        // document.cookie = "name=;"
+
+        console.log("document.cookie ",document.cookie);
+           
+        let cookiename = document.cookie.split(';')[1].split('=')[0];
+        console.log("Cookie Name is ",cookiename);
+       
+        </script>
     
 </body>
 </html>
