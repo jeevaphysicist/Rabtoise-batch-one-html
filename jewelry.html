@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="flex text-[13px] justify-between items-center p-4 bg-[#BB83A7] text-white">
+        <div></div>
+        <div>CHRISTMAS SALE: 2 JEWELERY PURCHASED, THE 3rd FREE! / FREE DELIVERY FR</div>
+        <div class="flex justify-between items-center gap-5 ">
+            <div class="flex items-center gap-3"><i class="bi bi-search"></i>SEARCH</div>
+            <div class="relative"><i class="bi bi-cart-fill"></i><span class="absolute text-[9px] bg-[#4A3021] text-white h-4 w-4 flex items-center justify-center rounded-[50%] -top-2 -right-2">2</span></div>
+        </div>
+    </div>
+    <!-- header -->
+     <div class="flex justify-between items-center gap-10 p-5 bg-white">
+        <div class="flex justify-end items-center w-[100%] gap-5" >
+            <div>Home</div>
+            <div>Necklaces</div>
+            <div>Braceltes</div>
+            <div>Rings</div>
+        </div>
+        <div class="w-max"><img class="h-[40px] w-[300px]" src="./images/jewelry-logo.png" alt="logo"/></div>
+        <div class="flex justify-start items-center w-[100%] gap-5">
+            <div>Earrings</div>
+            <div>Ankle Bracelets </div>
+            <div>All</div>
+            <div>Track My Order</div>
+        </div>
+     </div>
+     <!-- Herosection -->
+      <div class="h-[600px] w-[100%]">
+         <img class="h-[600px] w-[100%] object-cover" src="./images/Banner.png" alt="herosection banner...">
+      </div>
+
+      <div>
+         <div>FREE SHIPPING FOR</div>
+         <div>The Best Sellers</div>
+         <div id="card-listing" class="flex gap-5 flex-wrap items-center justify-center">
+              <!-- card -->
+             
+         </div>
+      </div>
+
+
+      <script>
+         let cardlist = document.getElementById('card-listing');
+
+         let card = `<div class="w-[280px] bg-white shadow-md">
+                <div class="w=[280px] h-[280px]">
+                     <img class="w=[280px] h-[280px] object-cover" src="./images/prod-img.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <div>NECKLACE "MURATO"</div>            
+                    <div>$ 19.99    $ 23.00</div>                       
+                    <div class="text-yellow-500">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                </div>
+             </div>`
+         cardlist.innerHTML = [1,2,3,4,5,6].map(element=>`${card}`);
+        
+      </script>
+
+</body>
+</html>
